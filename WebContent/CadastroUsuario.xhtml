@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+    >
+<h:head>
+<title>Cadastro Pessoa</title>
+</h:head>
+<h:body>
+<h1>Cadastro de Usuário</h1>
+<h:form>
+<h:panelGrid columns="1">
+<h:outputLabel value = "Nome"/>
+<h:inputText value= "#{PessoaMB.pessoa.nome}"/>
+<h:outputLabel value = "Sexo"/>
+<h:inputText value = "#{PessoaMB.pessoa.sexo}"/>
+<h:outputLabel value =  "País"/>
+<h:inputText value= "#{PessoaMB.pessoa.pais}"/>
+<h:outputLabel value = "Estado"/>
+<h:inputText value = "#{PessoaMB.pessoa.estado}"/>
+<h:commandButton value="Salvar" action="#{PessoaMB.salvar(PessoaMB.pessoa)}"/>
+</h:panelGrid>
+</h:form>
+</h:body>
+</html>

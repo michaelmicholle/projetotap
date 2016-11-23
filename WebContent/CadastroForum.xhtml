@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+    >
+<h:head>
+<title>Cadastro Forum</title>
+</h:head>
+<h:body>
+<h1>Cadastro Forum</h1>
+<h:form>
+<h:panelGrid columns="1">
+<h:outputLabel value = "Nome"/>
+<h:inputText value= "#{ForumMB.forum.nome}"/>
+<h:commandButton value="Salvar" action="#{ForumMB.salvar(ForumMB.forum)}"/>
+</h:panelGrid>
+</h:form>
+</h:body>
+</html>
